@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Onupom</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+		<script src="jquery/jquery-1.11.2.min.js"></script>
+		<script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		<script src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8">
+
+    // Call onDeviceReady when Cordova is loaded.
+    //
+    // At this point, the document has loaded but cordova-2.0.0.js has not.
+    // When Cordova is loaded and talking with the native device,
+    // it will call the event `deviceready`.
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // Cordova is loaded and it is now safe to call Cordova methods
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+		navigator.app.exitApp();
+    }
+
+    </script>
+	</head>
+	<body onload="onLoad()">
+		<div data-role="page" data-theme="b">
+			<div data-role="header" style="text-align:center;" data-tap-toggle="false"
+			 data-position="fixed">
+                            <h3>ONUPOM</h3>
+			</div>
+			<div data-role="main" class=" ui-content">
+                            <a href="eknojore.html" class="menue-background ui-btn ui-mini">পরিচিতি</a>
+                            <a href="recitation.html" class="menue-background ui-btn ui-mini">Recitation</a>
+				
+				<a href="song.html" class="menue-background ui-btn ui-mini">Song</a>
+				<a href="acting.html" class="menue-background ui-btn ui-mini">Acting</a>
+				<a href="poem.html" class="menue-background ui-btn ui-mini">Poem</a>
+				<a href="events.html" class="menue-background ui-btn ui-mini">Events</a>
+				<a href="otehers.html" class="menue-background ui-btn ui-mini">Others</a>
+				
+<!--				<a href="help.html" class="ui-btn ui-mini">জরুরি সেবা</a>
+				<a href="https://mobile.facebook.com/profile.php?id=100005249777605" target="blank" class="ui-btn ui-mini">সামাজিক যোগাযোগ</a>
+				<a href="motamot.html" class="ui-btn ui-mini">মতামত/অভিযোগ</a>
+				<a href="https://goo.gl/maps/AD5KftVPnQH2" target="blank" class="ui-btn ui-mini">গুগল ম্যাপ</a>-->
+			</div>
+			<div data-role="footer" data-tap-toggle="false" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="index.html" class=" background-chnage ui-btn ui-icon-home ui-btn-icon-top"  rel="external"></a></li>
+						<li><a href="about.html" class=" background-chnage ui-btn ui-icon-info ui-btn-icon-top" rel="external"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
