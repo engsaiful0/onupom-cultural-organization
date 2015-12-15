@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>পরিচিতি</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css"/>
+        <script src="jquery/jquery-1.11.2.min.js"></script>
+        <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+        <script src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+// Call onDeviceReady when Cordova is loaded.
+//
+// At this point, the document has loaded but cordova-2.0.0.js has not.
+// When Cordova is loaded and talking with the native device,
+// it will call the event `deviceready`.
+//
+            function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+            }
+
+// Cordova is loaded and it is now safe to call Cordova methods
+//
+            function onDeviceReady() {
+// Register the event listener
+                document.addEventListener("backbutton", onBackKeyDown, false);
+            }
+
+// Handle the back button
+//
+            function onBackKeyDown() {
+                navigator.app.exitApp();
+            }
+
+        </script>
+    </head>
+    <body onload="onLoad()">
+
+        <div data-role="page" data-theme="b">
+            <div data-role="header" data-tap-toggle="false" data-position="fixed" 
+                 style="text-align:center;">
+                <a href="index.html" class="ui-btn ui-icon-grid ui-btn-icon-left ui-btn-icon-notext">Home</a>
+                <h3>ONUPOM</h3>
+                <a href="about.html" class="ui-btn ui-icon-info ui-btn-icon-left ui-btn-icon-notext">Information</a>	
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <div id="poriciti-background" class="ui-bar ui-bar-b" style="text-align:center;">
+                    <p>আমাদের কার্যক্রম</p>
+                </div>
+                <div class="ui-corner-all custom-corners">
+<!--                    <div class="ui-bar ui-bar-a">
+                        <h3>Naming of Onupom</h3>
+                    </div>-->
+                    <div class="ui-body ui-body-a">
+                        <p style=text-align:justify;>&#9734;দেশীয় সংস্কৃতির প্রচার ও প্রসার।</br></br>
+                            &#9734;বাংলাদেশের সংখ্যাগরিষ্ঠ মানুষের সংস্কৃতিকে বিশুদ্ধভাবে উপস্থাপন।</br></br>
+                           &#9734;শিক্ষার্থীদের মন্ঞে ও টিভি উপযোগী করে গড়ে তোলা।</br></br>
+                           &#9734;সাংস্কৃতিক কর্মীদের উচ্চতর প্রশিক্ষণের ব্যবস্থা করা।</br></br>
+                            &#9734;দরিদ্র ও মেধাবী সাংস্কৃতিক কর্মীদের বৃত্তি প্রধান ।</br></br>
+                            &#9734;সুস্থ ধারার চলচ্চিত্র নির্মাণ ও পরিবেশন।</br></br>
+                            &#9734;সুস্থ সংস্কৃতি বিকাশের লক্ষে জনসচেতনতা তৈরী।।</p></br>
+
+
+                    </div>
+                </div>
+                <!--				<div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>উপজেলার পটভূমি</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p style=text-align:justify;>শ্যামনগর উপজেলাটি ১৯০৩ বর্গ কিলোমিটার আয়তন বিশিষ্ট। যার মুল ভূখন্ড ৪৫৫ বর্গ কিলোমিটার  এবং সুন্দরবন ১৪৪৮ বর্গ কিলমিটার।<br><br>
+                                                                বাংলাদেশের শেষ প্রান্তের সাগর কূলের জনপদ শ্যামনগর, দক্ষিন-পশ্চিম উপকূলীয় অঞ্চালের মধ্যে অবস্থিত। এলাকার উৎপত্তি ঘটে পলি অবক্ষেপনের মাধ্যমে। পৃথিবীর সর্ব বৃহৎ ম্যানগ্রোভ ফরেষ্ট সুন্দরবন সংলগ্ন বর্তমান শ্যামনগর উপজেলাটির প্রাক ঐতিহাসিক কাল থেকে গঙ্গা-পদ্মা নদীর মোহনায় ব-দ্বীপের মধ্যে অবস্থান করছে।<br><br>
+                
+                শ্যামনগর কালের সাক্ষী হয়ে আছে তার পুরাকীর্তি আর ঐতিহ্যকে বুকে ধারন করে। মহাকালের নিরিখে শ্যামনগর দীর্ঘ সময়ের মহিরুহ নয় তবে শ্যামনগরের এই তটভূমি ইতিহাসের আগের ম্মৃতিকে বহন করে চলেছে। <br><br>
+                 ‘‘সম্ভবত খ্রীষ্টপূর্ব ৩০০ অব্দে অর্থাৎ গ্রীক বীর আলেকজান্ডার যখন ভারত আক্রমন করেন, তখন গঙ্গা ও তার শাখা নদীর মোহনায় গঙ্গারিতা নামে যে রাজ্য ছিল তা পৌন্ড্রক্ষত্রিয় জাতির। এরা আর্যদের দ্বারা পরাজিত ও বিতাড়িত হয়ে পৌন্ড্রনগরী ত্যাগ করে এই নগরী গড়েতুলেছিল।<br><br>
+                 গঙ্গা ও তার শাখা নদী সমূহের এই সমুদ্র উপকূলীয় অঞ্চলটি পৌন্ড্রবর্দ্ধন ভূমির অন্তর্গত ছিল, গুপ্ত যুগের পর পাল ও সেন যুগের ইতিহাস সাক্ষ্য দেয়।<br><br>
+                
+                বাংলার বার ভূঁইয়াদের অন্যতম মহারাজ প্রতাপাদিত্য এর স্মৃতি বিজড়িত শ্যামনগর-এর নামকরণের ইতিহাস অতি বৈচিত্রপূর্ণ। কথিত আছে মহারাজ প্রতাপাদিত্যের পুত্র উদয়াদিত্য সুবেদার ইসলাম খাঁন দ্বারা পরিচালিত মুঘল সৈন্যদের আক্রমণ থেকে তাঁর যশোহর রাজ্যের রাজধানীকে রক্ষার্থে একটি খাল খনন করেন। <br><br>
+                কালের অমোঘ নিয়মে বিশাল মুঘল বাহিনীর সাথে প্রতাপাদিত্যের যুদ্ধ বাঁধে। মুঘর বাহিনী তাঁর রাজধানী আক্রমনের জন্য দুর্বারবেগে এগিয়ে আসে। এমন সময় অগ্রসরমান সৈন্যরা প্রতিরোধ খাল দেখে পশ্চাৎপদ সৈন্যদের সতর্ক সংকেত হিসেবে তাঁরা খালের সম্মুখে ‘শ্যামনি গর’ বলে চিৎকার করেন। পরবর্তী সময়ে ‘শ্যামনি’ ও ‘গর’ সহযোগে ‘শ্যামনগর’ নামের উৎপত্তি বলে অনেকের ধারণা।<br><br>
+                
+                অন্যমতে শ্যামনগরের আদি অধিবাসিরা ছিল মহাভারতীয় যুগের মানুষদের বংশধর। শ্রীকৃষ্ণ ছিলেন তাদের আরাধ্য দেবতা। শ্রীকৃষ্ণের শতাধিক নামের মধ্যে শ্যাম, গোপাল, গোবিন্দ, গোকুল, গোপী প্রভৃতি নামগুলো অধিক পরিচিত ও প্রচলিত। একারের মতন সেকালেও ছেলে মেয়ে ও গ্রামগঞ্জের নাম দেবদেবী ও অবতারদের নামে নামকরণ করার নিয়ম প্রচলিত ছিল।<br><br>
+                 সম্ভবত এখানকার আদিম অধিবাসীরা তাঁদের প্রিয় দেবতা শ্রীকৃষ্ণের ‘শ্যাম’ নামানুসারে তাঁদের বসবাসের এলাকারটির নাম ‘শ্যামনগর’ রেখেছিলেন।<br><br>
+                
+                অন্যমতে ইংরেজ আমলে প্রথমে এখানে একটি ফাঁড়ি ছিল। পরবর্তীতে ফাঁড়িটিকে থানায় উন্নীত করার সময় শ্যামসুন্দর নামক একজন ভদ্রলোক প্রয়োজনীয় গৃহাদি নির্মাণের জন্য একখন্ড জমি ইংরেজ সরকারকে দান করেন। সেই থেকে স্থানটির নাম দাতার নামানুসারে ‘শ্যামনগর’ হয়েছে।</p>
+                                                         </div>
+                                                </div>
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>সীমানা</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p style=text-align:justify;>শ্যামনগর উপজেলার উত্তরে কালিগঞ্জ উপজেলা, দক্ষিণে বিশাল বনভূমি সুন্দরবন, পুর্বে আশাশুনি উপজেলা এবং খুলনা জেলার কয়রা উপজেলা এবং পশ্চিমে ভারতের পশ্চিমবঙ্গ রাজ্যের চব্বিশ পরগনা জেলা।</p>
+                                                         </div>
+                                                </div>
+                                                
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>জনসংখ্যা</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p style=text-align:justify;>জনসংখ্যা- ৩১৮২৫৪ ; পুরুষ- ১৫৩৪৪১, মহিলা- ১৬৪৮১৩ । (২০১১ সালের তথ্য অনুযায়ী) উপজাতীয় জনসংখ্যাঃ ১৬৩১। </p>
+                                                         </div>
+                                                </div>
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>মোটভোটার সংখ্যা</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p> ২২২৩০৮ জন। </p>
+                                                         </div>
+                                                </div>
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>গ্রাম</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p> ২২৩ টি।</p>
+                                                         </div>
+                                                </div>
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>মৌজা</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p>১২৭ টি</p>
+                                                         </div>
+                                                </div>
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>ইউনিয়ন</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <p>১২ টি। </p>
+                                                         </div>
+                                                </div>
+                                                
+                                                
+                                                <div class="ui-corner-all custom-corners">
+                                                        <div class="ui-bar ui-bar-a">
+                                                                <h3>মানচিত্রে উপজেলা</h3>
+                                                        </div>
+                                                        <div class="ui-body ui-body-a">
+                                                                <img style="max-width: 100%;" src="img/map.jpg"/>
+                                                         </div>
+                                                </div>
+                                                
+                                                
+                                        </div>-->
+                <div data-role="footer" data-tap-toggle="true" data-position="fixed">
+                    <div data-role="navbar">
+                        <ul>
+                            <li><a href="index.html" class=" background-chnage ui-btn ui-icon-home ui-btn-icon-top" rel="external"></a></li> 
+                            <li><a class="background-chnage" onclick="window.history.back()" href="#" data-icon="back"></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
